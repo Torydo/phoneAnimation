@@ -87,7 +87,7 @@ class App extends React.Component {
 					right: goodsRight + 1300 / 5,
 				},
 				textOpacity: position / 2200,
-				bottomPro: position >= 1300 && position <= 2500 ?  position / 500 * 8 - 20: position / 45 -20
+				bottomPro: position >= 1300 && position <= 2500 ?  position / 45 - 20: position / 35 -20
 			});
 		}
 		
@@ -120,7 +120,7 @@ class App extends React.Component {
 									<div className='extra-goods' style={{right: `-${goods.right}px`}}>
 										<figure className='main-item' style={{ width: goods.width, height: goods.height, backgroundSize: `${goods.width}px ${goods.height}px`}}></figure>
 									</div>
-									<video muted={false} playsInline="" autoPlay loop="1"  className="vp-large video-loaded video-can-play video-download-complete" src="https://www.apple.com//105/media/us/iphone-se/2020/90024c0f-285a-4bf5-af04-2c38de97b06e/anim/4k-video/large.mp4">
+									<video muted={true} playsInline="" autoPlay loop="1"  className="vp-large video-loaded video-can-play video-download-complete" src="https://www.apple.com//105/media/us/iphone-se/2020/90024c0f-285a-4bf5-af04-2c38de97b06e/anim/4k-video/large.mp4">
 									</video>
 								</div>
 								<div className='time-map'>
