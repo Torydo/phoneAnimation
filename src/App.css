@@ -1,0 +1,846 @@
+
+html {
+  --r-globalnav-height: 44px;
+  --r-globalnav-segmentbar-height: 0;
+  --r-globalnav-viewport-large-min-width: 1024px;
+  --r-globalnav-viewport-large-max-width: 1441px;
+  --r-globalnav-viewport-large-query: (min-width: 1024px);
+  --r-globalnav-viewport-medium-min-width: 768px;
+  --r-globalnav-viewport-medium-max-width: 1023px;
+  --r-globalnav-viewport-medium-query: (max-width: 1023px);
+  --r-globalnav-viewport-small-min-width: 420px;
+  --r-globalnav-viewport-small-max-width: 767px;
+  --r-globalnav-viewport-small-query: (max-width: 767px);
+  --r-globalnav-viewport-xsmall-min-width: 320px;
+  --r-globalnav-viewport-xsmall-max-width: 419px;
+  --r-globalnav-viewport-xsmall-query: (max-width: 419px);
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.section-a13 {
+  --a13-scroll-view-unmasked: 15vh;
+  --a13-portrait-light-pass: 65vh;
+  --a13-scroll-unmask-zoom: 150vh;
+  z-index: 2;
+  margin-top: -1px;
+}
+
+.theme-dark {
+  background-color: #000;
+  color: #f5f5f7;
+}
+
+.section {
+  z-index: 1;
+  position: relative;
+}
+
+.icon-intro {
+  --shared-intro-height-headline-enhanced: 100vh;
+  --shared-intro-height-sticky-content: 100vh;
+  --shared-intro-height-overlay-intro: 100vh;
+  --shared-intro-scroll-icon-play-margin: 40vh;
+  z-index: 1;
+  position: relative;
+}
+
+.section-a13 .a13-intro.enhanced .sticky-scroll-height {
+  min-height: calc(var(--shared-intro-height-sticky-content) + var(--shared-intro-scroll-icon-play-margin) + var(--a13-scroll-unmask-zoom) + var(--a13-scroll-view-unmasked) + var(--shared-intro-height-overlay-intro) + var(--a13-portrait-light-pass));
+}
+
+.icon-intro .sticky-scroll-height {
+  height: auto;
+}
+
+.icon-intro .sticky-container, .icon-intro .sticky-content, .icon-intro .content-above-sticky, .icon-intro .content-below-sticky {
+  position: relative;
+  width: 100%;
+}
+
+.section-a13 .a13-intro.enhanced .content-above-sticky {
+  height: calc(var(--shared-intro-height-headline-enhanced) - (200px / 2));
+}
+
+.icon-intro.enhanced .content-above-sticky {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--shared-intro-height-sticky-content);
+}
+
+.section-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+  position: relative;
+}
+
+.icon-intro.enhanced .content-above-sticky .row {
+  min-height: 0;
+  padding: 0;
+}
+
+.icon-intro .content-above-sticky .row {
+  min-height: var(--shared-intro-height-sticky-content);
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+
+
+.align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+}
+
+.large-8 {
+  -ms-flex-preferred-size: 66.66667%;
+  flex-basis: 66.66667%;
+  max-width: 66.66667%;
+}
+
+.large-offset-2 {
+  margin-left: 16.66667%;
+}
+
+.column {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-width: 0px;
+}
+.section-a13 .a13-intro .eyebrow-icon {
+  width: 77px;
+  height: 77px;
+  background-size: 77px 77px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/iphone-se/c/images/overview/icon_a13_static__eedvgjvcl926_large.jpg);
+}
+
+.icon-intro.enhanced .eyebrow-icon {
+  background: none !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6 {
+  color: #f5f5f7;
+}
+
+.visuallyhidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+}
+
+.section-a13 .a13-intro.enhanced .section-headline {
+  margin-top: 0;
+  opacity: 0;
+  text-align: center;
+}
+
+.section-a13 .a13-intro .section-headline {
+  margin-top: 0.5em;
+}
+
+.will-change {
+  will-change: transform, opacity;
+}
+
+.typography-section-headline-super {
+  font-size: 64px;
+  line-height: 1.0625;
+  font-weight: 700;
+  letter-spacing: -.009em;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.large-show {
+  display: block;
+}
+
+.section-a13 .a13-intro.enhanced .section-intro {
+  margin-top: 0;
+  color: #1d1d1f;
+}
+
+.section-a13 .a13-intro .section-intro {
+  margin-top: 1.1em;
+}
+
+.icon-intro .base-only {
+  display: block;
+}
+
+.icon-intro.enhanced .base-only {
+  display: none;
+}
+
+.section-headline-space-below+* {
+  margin-top: 42px;
+}
+
+.typography-section-intro-elevated {
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: .004em;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.icon-intro.enhanced .sticky-content {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.icon-intro .sticky-content {
+    height: var(--shared-intro-height-sticky-content);
+}
+
+.icon-intro .sticky-content .sticky-overflow-hidden {
+  z-index: 1;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+}
+
+.section-a13 .a13-intro.enhanced .icon-anim-container {
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.icon-intro.enhanced .icon-anim-container {
+  z-index: 3;
+}
+
+.icon-intro.enhanced .icon-anim-container, .icon-intro.enhanced .mask, .icon-intro.enhanced .sticky-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon-intro .enhanced-only {
+  display: none;
+}
+
+.icon-intro.enhanced .enhanced-only {
+  display: block;
+}
+
+.icon-intro.enhanced .mask {
+  z-index: 2;
+}
+
+.icon-intro.enhanced .mask, .icon-intro.enhanced .masked, .icon-intro.enhanced .sticky-overlay {
+  width: 100%;
+  height: 100%;
+}
+
+audio, canvas, video, progress {
+  vertical-align: baseline;
+}
+
+.icon-intro.enhanced .masked {
+  z-index: 1;
+  overflow: hidden;
+}
+
+.icon-intro .masked {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.section-a13 .a13-intro .inline-video-container, .section-a13 .a13-intro .inline-video-media {
+  width: 100%;
+  height: 100%;
+}
+
+.section-a13 .a13-intro .inline-video-media {
+  z-index: 1;
+  position: relative;
+}
+
+.section-a13 .a13-intro.enhanced video {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-a13 .a13-intro.enhanced video {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  
+}
+
+.section-a13 .a13-intro.enhanced .inline-video-frame-start {
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/iphone-se/c/images/overview/arcade_loop_static__cb0hrdm9u9yq_large.jpg);
+  position: relative;
+  min-height: var(--shared-intro-height-sticky-content);
+  width: 100%;
+  background-position: top center;
+  background-size: cover;
+}
+
+.section-a13 .a13-intro.enhanced .inline-video-frame-start {
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/iphone-se/c/images/overview/arcade_loop_startframe__eggedkbx91oy_large.jpg);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: 0.25s opacity;
+  transition: 0.25s opacity;
+}
+
+.section-a13 .a13-intro .inline-video-frame-start {
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/iphone-se/c/images/overview/arcade_loop_static__cb0hrdm9u9yq_large.jpg);
+  position: relative;
+  width: 100%;
+  min-height: var(--shared-intro-height-sticky-content);
+  background-position: top center;
+  background-size: cover;
+}
+
+.section-a13 .a13-intro.enhanced .sticky-overlay {
+  background-color: #f2f2f2;
+}
+
+.icon-intro.enhanced .sticky-overlay {
+  z-index: 4;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.section-a13 .a13-intro.enhanced .hero-transition-overlay {
+  display: block;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 1;
+  background-color: #131313;
+}
+
+.section-a13 .a13-intro .hero-transition-overlay {
+  display: none;
+}
+
+.section-a13 .a13-intro.enhanced .playback-control-container {
+  display: block;
+  z-index: 5;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  mix-blend-mode: difference;
+}
+
+.section-a13 .a13-intro .playback-control-container, .section-a13 .a13-intro .playback-control {
+  display: none;
+}
+
+.section-a13 .a13-intro.enhanced .playback-control.disabled {
+  opacity: 0;
+  -webkit-transition: none;
+  transition: none;
+  pointer-events: none;
+}
+
+.section-a13 .a13-intro.enhanced .playback-control {
+  display: block;
+}
+
+.playback-control.play {
+  background-position-x: -40px;
+}
+
+.playback-control.play, .playback-control.pause {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.playback-control {
+  display: block;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  margin-left: auto;
+  opacity: 0;
+  border-radius: 20px;
+  pointer-events: none;
+  -webkit-transform-origin: 20px 20px;
+  transform-origin: 20px 20px;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  cursor: pointer;
+  -webkit-tap-highlight-color: tansparent;
+  background-repeat: no-repeat;
+  background-size: 120px 40px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNDAgODAiPjxnPjxjaXJjbGUgY3g9IjQwIiBjeT0iNDAiIHI9IjM4IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNCIgb3BhY2l0eT0iMC4yIi8+PHBhdGggZD0iTTQwLDJBMzgsMzgsMCwwLDEsNzgsNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjQiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODAsMCkiPjxwYXRoIGQ9Ik0zMSwyOC4yMVY1MS43OWEyLjI1LDIuMjUsMCwwLDAsMy4zOCwxLjk1bDIwLjQtMTEuNzlhMi4yNSwyLjI1LDAsMCwwLDAtMy45TDM0LjM4LDI2LjI3QTIuMjUsMi4yNSwwLDAsMCwzMSwyOC4yMVoiIGZpbGw9IiNmZmYiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIzOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjQiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYwLDApIj48Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIzOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjQiLz48cmVjdCB4PSIzMCIgeT0iMjYiIHdpZHRoPSI2IiBoZWlnaHQ9IjI4IiByeD0iMiIgcnk9IjIiIGZpbGw9IiNmZmYiLz48cmVjdCB4PSI0NCIgeT0iMjYiIHdpZHRoPSI2IiBoZWlnaHQ9IjI4IiByeD0iMiIgcnk9IjIiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+Cg==);
+}
+
+button {
+  background: none;
+  border: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: inherit;
+  overflow: visible;
+  vertical-align: inherit;
+}
+
+.section-a13 .a13-intro.enhanced .content-below-sticky {
+  pointer-events: none;
+}
+
+.icon-intro.enhanced .content-below-sticky {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.icon-intro.enhanced .enhanced-intro-copy-container {
+  height: var(--shared-intro-height-overlay-intro);
+}
+
+
+.section-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+  position: relative;
+}
+
+.icon-intro .section-content, .icon-intro .row {
+  height: 100%;
+}
+
+.large-offset-1 {
+  margin-left: 8.33333%;
+}
+
+.section-a13 .a13-intro.enhanced .section-intro {
+  margin-top: 0;
+  color: #1d1d1f;
+}
+
+.section-a13 .a13-intro.enhanced .camera-hardware-container {
+  height: var(--a13-portrait-light-pass);
+  min-height: 376px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f2f2f2), color-stop(50%, rgba(242,242,242,0)));
+  background: -webkit-linear-gradient(bottom, #f2f2f2, rgba(242,242,242,0) 50%);
+  background: linear-gradient(0deg, #f2f2f2, rgba(242,242,242,0) 50%);
+}
+
+.section-a13 .a13-intro .camera-hardware-container {
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  min-height: 900px;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+.theme-dark .theme-light, .theme-dark .theme-light-tertiary, .theme-dark .theme-light-hardware {
+  color: #1d1d1f;
+}
+
+.theme-dark .theme-light-hardware {
+  background-color: #f2f2f2;
+}
+
+.section-a13 .a13-intro .camera-hardware-container .offset-start-content {
+  width: auto;
+  height: 100%;
+  margin-left: calc(100% / 2 - 980px / 2);
+}
+
+.section-a13 .a13-intro .camera-hardware-container .row {
+  z-index: 1;
+  position: relative;
+  width: auto;
+  height: 100%;
+}
+
+.justify-content-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.section-a13 .a13-intro .camera-hardware-container .column {
+  z-index: 1;
+  position: relative;
+  width: 1546px;
+  height: 376px;
+}
+
+.section-a13 .a13-intro.enhanced .camera-hardware-container .inline-video-media {
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url(https://www.apple.com/v/iphone-se/c/images/overview/portrait_phone_mask__dwp0vf2n5ru6_large.svg);
+  mask-image: url(https://www.apple.com/v/iphone-se/c/images/overview/portrait_phone_mask__dwp0vf2n5ru6_large.svg);
+}
+
+.section-a13 .a13-intro.enhanced .camera-hardware-container .inline-video-media {
+  width: 1546px;
+  height: 376px;
+  background-size: 1546px 376px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/iphone-se/c/images/overview/portrait_phone_startframe__bmi1zthu74c2_large.jpg);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.section-a13 .a13-intro .camera-hardware-container .inline-video-media {
+  width: 1546px;
+  height: 376px;
+  background-size: 1546px 376px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/iphone-se/c/images/overview/portrait_phone_static__fer42qwsmsae_large.jpg);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-a13 .a13-intro.enhanced .camera-hardware-container .light-pass-video.video-loaded, .section-a13 .a13-intro.enhanced .camera-hardware-container .light-pass-video.video-unloaded {
+  opacity: 1;
+}
+
+.section-a13 .a13-intro.enhanced .camera-hardware-container .light-pass-video {
+  -webkit-transform: opacity 0.25s;
+  transform: opacity 0.25s;
+}
+
+.section-a13 .a13-intro .camera-hardware-container .light-pass-video {
+  z-index: 1;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  opacity: 0;
+}
+.masked {
+  mask-image: url('/images/apple.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.theme-dark .theme-light-tertiary {
+  background-color: #f5f5f7;
+}
+
+.section-4k-video {
+  margin-top: -1px;
+}
+
+.section-4k-video .section-main-content {
+  height: auto;
+  width: 100%;
+}
+
+.section-4k-video .header-column {
+  margin-top: 80px;
+}
+.large-10 {
+  -ms-flex-preferred-size: 83.33333%;
+  flex-basis: 83.33333%;
+  max-width: 83.33333%;
+}
+.large-10 {
+  -ms-flex-preferred-size: 83.33333%;
+  flex-basis: 83.33333%;
+  max-width: 83.33333%;
+}
+
+.typography-section-headline-super {
+  font-size: 64px;
+  line-height: 1.0625;
+  font-weight: 700;
+  letter-spacing: -.009em;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+br.small {
+  display: none;
+}
+.section-4k-video .sticky-element {
+  --s-image-width: 822px;
+  --s-image-height: 406px;
+  position: fixed;
+  --top-spacing: 0px;
+  width: 100%;
+  height: calc(100vh + var(--top-spacing));
+  z-index: 0;
+  overflow: hidden;
+  
+  margin: calc(var(--padding-hardware) * -1) 0;
+}
+
+.hardware {
+  width: var(--s-image-width);
+  margin: 0 auto;
+  will-change: transform;
+  visibility: visible;
+}
+
+.section-4k-video .hardware-image {
+  /* background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/iphone-se/c/images/overview/high_definition_hardware__fi9yakno85me_large.jpg);
+  position: relative;
+  left: 50%;
+  margin-left: -411px;
+  width: 822px;
+  height: 406px;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-size: cover !important; */
+  background-repeat: no-repeat;
+  background-image: url(./images/high_definition_hardware__fi9yakno85me_large.png);
+  position: relative;
+  /* left: 50%; */
+  /* margin-left: -411px; */
+  width: 822px;
+  height: 406px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  /* -webkit-mask-image: radial-gradient(white, black); */
+  mask-image: radial-gradient(white, black);
+  /* -webkit-backface-visibility: hidden; */
+  backface-visibility: hidden;
+  background-size: cover !important;
+  z-index: 3;
+}
+
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+.section-4k-video .video-container {
+  position: absolute;
+  left: calc(50% - -39px);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 620px;
+  height: 351px;
+
+}
+
+.section-4k-video video.video-can-play {
+  visibility: visible;
+}
+
+.section-4k-video video {
+  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.section-4k-video .video-can-play+.static-frame {
+  display: none;
+}
+
+.section-4k-video .static-frame {
+  background-repeat: no-repeat;
+  background-image: url(/v/iphone-se/c/images/overview/high_definition_video_static__be62bdcjd742_large.jpg);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 0;
+}
+
+.section-4k-video .ui-elements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0px;
+  right: 0px;
+}
+
+.section-4k-video .black-frame {
+  background-color: black;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    will-change: opacity;
+}
+
+.scalable-hardware {
+  position: relative;
+}
+
+.section-bottom {
+  width: 100%;
+  height: 3500px;
+}
+.time-item {
+  width: 90px;
+  height: 29px;
+  position: absolute;
+  background-size: cover;
+  margin: 0px;
+}
+
+.sub-img-1 {
+  background-repeat: no-repeat;
+  background-image: url("https://www.apple.com/v/iphone-se/c/images/overview/ui_controls_top_01__dj6brthgtok2_large.png")
+}
+
+.sub-img-2 {
+  background-repeat: no-repeat;
+  background-image: url("https://www.apple.com/v/iphone-se/c/images/overview/ui_controls_top_02__f8brzd6oau62_large.png");
+}
+
+.sub-img-3 {
+  background-repeat: no-repeat;
+  background-image: url("https://www.apple.com/v/iphone-se/c/images/overview/ui_controls_top_03__dist1gv6p88y_large.png")
+}
+
+.sub-img-4 {
+  background-repeat: no-repeat;
+  background-image: url("https://www.apple.com/v/iphone-se/c/images/overview/ui_controls_top_04__cxe7rwuwvueu_large.png");
+}
+
+.time-map {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, 29px);
+}
+
+
+.main-item {
+  background-repeat: no-repeat;
+  background-image: url("https://www.apple.com/v/iphone-se/c/images/overview/ui_controls_bottom__c5czxs8os2wm_large.png");
+  width: 64px;
+  height: 195px;
+  background-size: 64px 195px;
+  background-repeat: no-repeat;
+}
+
+.extra-goods {
+  position: absolute;
+  top: -7px;
+  z-index: 3;
+  right: -34px;
+}
+
+.text-part {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 0;
+
+}
+
+.text-part p {
+  color: #f5f5f7;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: .004em;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  position: absolute;
+    opacity: 1.07556;
+    width: 680px;
+    left: 22%;
+  bottom: -20%;
+  transform: translate(0px, -50%);
+}
